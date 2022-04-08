@@ -8,11 +8,10 @@ const Routes = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={SignIn} />
-                <Route exact path="/dashboard" component={DashBoard} isPrivate />
+                <Route exact path="/dashboard" component={DashBoard} />
             </Switch>
         </BrowserRouter>
     )
 
 }
-
 export default Routes;

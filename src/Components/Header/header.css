@@ -1,14 +1,31 @@
-.sidebar{
-    width: 105px;
-    height: 766px;
-    background-color: #5138EE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+
+.dashboard-string{
+    color: #000000;
+    margin-left: 145px;
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: 700, bold;
+    font-family: 'Mulish', sans-serif;
 }
 
-.sidebar .dashboardIcon{
-    margin-left: 24px;
-    margin-top: 27px;
-    margin-bottom: 72px;
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -37px;
+    margin-right: 64px;
+    margin-bottom: 27px;
+}
+
+ .bell{
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+.right-side .bg-avatar{
+    margin-right: 7px;
 }

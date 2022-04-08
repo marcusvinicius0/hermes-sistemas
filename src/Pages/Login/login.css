@@ -1,106 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-body{
+
+.container-loginpage{
     font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
 }
 
-.container1, h1{
-    margin-top: 40px;
-    margin-left: 49px;
-}
-
-h1{
-    font-size: 38px;
-}
-
-.container1, .welcome{
-    margin-top: 10px;
-    margin-left: 49px;
-}
-
-.welcome{
-    font-size: 24px;
-}
-
-.customer-name{
-    margin-top: 10px;
-    margin-left: 49px;
-    font-style: italic;
-    font-size: 24px;
-}
-
-.row{
-    margin-top: 8px;
-    margin-left: 36px;
-    width: 449px;
-    border: 0.5px solid rgba(0, 0, 0, 0.6);
-    opacity: 0.3;
-    margin-right: 46px;
-}
-
-.formulario label{
+.login-area{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    font-size: 18px;
-    margin-bottom: 17px;
 }
 
-.formulario{
+ .login-area .login-string{
+    margin-top: 40px;
+    margin-left: 49px;
+    font-weight: 700, bold;
+    font-size: 38px;
+}
+
+.login-area .welcome-string{
+    margin-top: 10px;
+    margin-left: 49px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.login-area .customer-name{
+    margin-top: 10px;
+    margin-left: 49px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.login-area .row-login{
+    width: 449px;
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    margin-top: 8px;
+    margin-left: 36px;
+    opacity: 0.3;
+}
+
+form .email-string{
     margin-top: 66px;
     margin-left: 66px;
-}
-
-.formulario p{
+    font-weight: 400;
+    font-size: 18px;
     margin-bottom: 9px;
 }
 
-.formulario input{
+form .email-input{
     width: 368px;
     height: 44px;
     border-radius: 15px;
+    background-color: #FFFFFF;
     border: 1px solid #5138EE;
+    margin-left: 66px;
     padding: 1vw;
 }
 
-.formulario a{
-    font-size: 14px;
-    margin-left: 238px;
-    color: #5138EE;
+form .password-string{
+    margin-top: 17px;
+    margin-left: 66px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 9px;
 }
 
-a{
-    font-weight: 700;
-}
-
-
-.formulario button{
+form .password-input{
     width: 368px;
     height: 44px;
-    background-color: #5138EE;
-    border: 1px solid #5138EE;
     border-radius: 15px;
-    color: #FFF;
-    text-align: center;
-    font-weight: 700, Bold;
-    font-size: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #5138EE;
+    display: block;
+    margin-left: 66px;
+    padding: 1vw;
 }
 
-.container2{
+form .forgot-password{
+    margin-left: 302px;
+    padding-top: 17px;
+    color: #5138EE;
+    font-weight: 700;
+    display: block;
+    font-size: 14px;
+}
+
+form .login{
+    width: 368px;
+    height: 44px;
+    border-radius: 15px;
+    border: 1px solid #5138EE;
+    background-color: #5138EE;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 66px;
+}
+
+.logo-area{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end; 
+    align-items: flex-end;
+
 }
 
-.container2 .background{
-    background-color: #5138EE;
-    width: 750px;
+.logo-area .background{
+    width: 592px;
     height: 657px;
-    margin-top: -36.6vw;
+    background-color: #5138EE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 1px 1px 0px;
+    margin-top: -38.3vw;
+    margin-right: 0.2vw;
 }
 
-.background .logo{
-    z-index: 99;
-    margin: 271px 61px 270px 150px;
+.logo-area .hermes-logo{
+    margin: 271px 61px 270px 60px;
 }

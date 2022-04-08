@@ -1,55 +1,27 @@
-
-import logo from '../../assets/logo1.svg';
-import dashboardIcon from '../../assets/dashboard.svg';
-import vendasIcon from '../../assets/vendas.svg';
-import estoqueIcon from '../../assets/estoque.svg';
-import clientesIcon from '../../assets/clientes.svg';
-import configuracaoIcon from '../../assets/configuração.svg';
-import ajudaIcon from '../../assets/ajuda.svg';
-
 import './header.css';
 
-import { Link } from 'react-router-dom';
+import bellIcon from '../../assets/notification.svg';
+import ellipse from '../../assets/ellipse.svg';
 
-export default function Header(){
-    return(
-        <div className="sidebar">
-            <div>
-                <img src={logo} alt="logo"/>
+export default function Header() {
+    return (
+        <header>
+            <h1 className="dashboard-string">Dashboard</h1>
+
+            <div className="right-side">
+                <label className="bell">
+                    <img src={bellIcon} alt="notificação" />
+                </label>
+                <img className="bg-avatar" src={ellipse} alt="background-avatar" />
+
+                <div>
+                    <p className="user">João da Silva</p>
+                    <p>Gerente de vendas</p>
+                </div>
             </div>
-
-            <div />
-
-            <Link to="/">
-                <img className="dashboardIcon" src={dashboardIcon} alt="dashboard" />
-            </Link>
-
-            <Link>
-                <img src={vendasIcon} alt="vendas"/>
-            </Link>
-
-            <Link>
-                <img src={estoqueIcon} alt="estoque" />
-            </Link>
-
-            <Link>
-                <img src={clientesIcon} alt="clientes" />
-            </Link>
-
-            <div />
-
-            <Link>
-                <img src={configuracaoIcon} alt="configuração" />
-            </Link>
-
-            <Link>
-                <img src={ajudaIcon} alt="ajuda" />
-            </Link>
-
-
-        </div>
-
+        </header>
     )
 
 
 }
+

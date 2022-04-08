@@ -2,48 +2,42 @@ import './login.css';
 
 import logo from '../../assets/logo.svg';
 
-import { Link } from 'react-router-dom';
-
-
 export default function SignIn() {
     return (
-        <div className="container">
-            <div className="container1">
-                <h1>Login</h1>
-                <p className="welcome">Seja Bem vindo(a)</p>
+        <div className="container-loginpage">
+            <div className="login-area">
+                <h1 className="login-string">Login</h1>
+                <p className="welcome-string">Seja Bem vindo(a)</p>
                 <p className="customer-name">EXEMPLO NOME DO CLIENTE</p>
-                <div className="row" />
+                <div className="row-login" />
+            </div>
 
-                <div className="formulario">
-                    <form>
-                        <label>
-                           <p>Email</p>
-                            <input type="email" required />
-                        </label>
-                        
-                        <label>
-                           <p>Senha</p>
-                            <input type="password" required />
-                        </label>
-                        
-                        <label>
-                        <a href="" target="_blank" rel="noreferrer">Esqueceu a senha?</a>
-                        </label>
+            <div>
+                <form>
+                    <label>
+                        <p className="email-string">Email</p>
+                        <input className="email-input" type="email" required/>
+                    </label>
 
-                        <button onClick={()=>{}} type="button">Login</button>
-                        
-                    </form>
+                    <label>
+                        <p className="password-string">Senha</p>
+                        <input className="password-input" type="password" required/>
+                    </label>
+
+                
+                        <a href="" className="forgot-password">Esqueceu a senha?</a>
+                 
+
+                    <button className='login' type="submit">Login</button>
+                </form>
+            </div>
+
+            <div className="logo-area">
+                <div className="background">
+                    <img className="hermes-logo" src={logo} alt="logo" />
                 </div>
+
             </div>
-
-            <div className="container2">
-               <div className="background">
-               <img className="logo" src={logo} alt="logo-empresa" />
-               </div>
-               
-            </div>
-
-
         </div>
     )
 }
