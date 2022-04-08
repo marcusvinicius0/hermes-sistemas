@@ -1,8 +1,11 @@
 
+import Header from "../../Components/Header";
+
 export default function DashBoard(){
     return(
         <div>
-            <h1>DashBoard page</h1>
+            <Header />
+            
         </div>
     )
 }

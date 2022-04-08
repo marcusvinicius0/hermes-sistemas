@@ -2,6 +2,8 @@ import './login.css';
 
 import logo from '../../assets/logo.svg';
 
+import { Link } from 'react-router-dom';
+
 
 export default function SignIn() {
     return (
@@ -28,7 +30,8 @@ export default function SignIn() {
                         <a href="" target="_blank" rel="noreferrer">Esqueceu a senha?</a>
                         </label>
 
-                        <button type="button">Login</button>
+                        <button onClick={()=>{}} type="button">Login</button>
+                        
                     </form>
                 </div>
             </div>
