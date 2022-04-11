@@ -9,30 +9,40 @@ import ajudaIcon from '../../assets/ajuda.svg';
 
 import './sidebar.css';
 
+// import { useHistory } from 'react-router-dom';
+
+
+
 import { Link } from 'react-router-dom';
 
-export default function Sidebar(){
-    return(
+export default function Sidebar() {
+    // const history = useHistory()
+    // function handleNavegation(params){
+    //     history.push({pathname:`${params}`})
+    //     console.log("clicou")
+    // }
+
+    return (
         <div className="sidebar">
             <div>
-                <img className="logo" src={logo} alt="logo"/>
+                <img className="logo" src={logo} alt="logo" />
             </div>
 
             <hr className="row"></hr>
 
-            <Link to="/dashboard">
+            <Link to="dashboard">
                 <img className="dashboardIcon" src={dashboardIcon} alt="dashboard" />
             </Link>
 
-            <Link>
-                <img className="salesIcon" src={vendasIcon} alt="vendas"/>
+            <Link to="vendas">
+                <img className="salesIcon" src={vendasIcon} alt="vendas" />
             </Link>
 
-            <Link>
+            <Link to="estoque">
                 <img className="storageIcon" src={estoqueIcon} alt="estoque" />
             </Link>
 
-            <Link>
+            <Link to="clientes">
                 <img className="customersIcon" src={clientesIcon} alt="clientes" />
             </Link>
 
@@ -40,11 +50,11 @@ export default function Sidebar(){
 
             <hr className="row1"></hr>
 
-            <Link>
+            <Link to="configuração">
                 <img className="settingsIcon" src={configuracaoIcon} alt="configuração" />
             </Link>
 
-            <Link>
+            <Link to="/">
                 <img className="helpIcon" src={ajudaIcon} alt="ajuda" />
             </Link>
 

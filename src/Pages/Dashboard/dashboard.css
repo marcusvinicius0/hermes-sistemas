@@ -10,13 +10,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -50vw;
-    margin-left: 8.7vw;
+    margin-top: -41vw;
+    margin-left: 6vw;
 }
 
 .container-dashboard1{
     width: 1180px;
-    height: 650px;
+    height: 550px;
     border-radius: 15px;
     background-color: #FFFFFF;
     justify-content: center;
@@ -25,7 +25,7 @@ body{
 
 .container-dashboard1 .container-maisvendidos{
     width: 470px;
-    height: 320px;
+    height: 240px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -50,7 +50,7 @@ body{
 
 .container-maisvendidos .gráfico{
     width: 441px;
-    height: 245px;
+    height: 175px;
     background-color: #FFFFFF;
     border: 0.5px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,13 +72,29 @@ body{
 
 .container-ultimasvendas{
     width: 650px;
-    height: 441px;
+    height: 370px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: -25.4vw;
+    margin-top: -19.5vw;
     margin-right: 1.5vw;
+}
+
+.container-ultimasvendas h2{
+    padding-left: 1vw;
+    padding-top: 7px;
+}
+
+.container-ultimasvendas .lista-ultimasvendas p{
+    width: 615px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 17px 16px 13px 17px;
+    color: red;
+    text-align: center;
 }
 
 .financeiro{
@@ -87,12 +103,12 @@ body{
     align-items: flex-start;
     flex-direction: row;
     gap: 21px;
-    margin-top: -90px;
+    margin-top: -100px;
 }
 
 .financeiro .faturamento{
     width: 138px;
-    height: 105px;
+    height: 90px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -102,7 +118,7 @@ body{
 
 .financeiro .lucro{
     width: 138px;
-    height: 105px;
+    height: 90px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -111,11 +127,28 @@ body{
 
 .financeiro .vendas{
     width: 138px;
-    height: 105px;
+    height: 90px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+}
+
+.financeiro .valor-total{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin: 31px 0px 0px 0px;
+    text-align: center;
+}
+
+.financeiro p{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #000000;
+
 }
 
 .metas-container{
@@ -126,37 +159,64 @@ body{
 
 .metas-container .metas-container1{
     width: 470px;
-    height: 152px;
+    height: 135px;
     border-radius: 15px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 26px 0px 20px 15px;
+    margin: 24px 0px 20px 15px;
+}
+
+.metas-container1 h3{
+    margin-left: 14px;
 }
 
 .metas-container .metas-container1 .metas-container2{
     width: 443px;
-    height: 107px;
+    height: 100px;
     background-color: #FFFFFF;
     border: 0.5px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 36px 15px 9px 12px;
+    margin: 2px 15px 9px 12px;
 }
 
-.time-container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
 
-}
 
 .time-container .time{
-    position: relative;
-    width: 446px;
-    height: 152px;
+    position: absolute;
+    width: 653px;
+    height: 134px;
     border-radius: 15px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: -400px;
+    margin-top: -11.4vw;
+    margin-left: 37.2vw;
+}
+
+
+.time-container .time h4{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin: 11px 0px 21px 14px;
+}
+
+.time-container .time .tempo-real{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    /* margin: 10px 30px 0px 250px; */
+    text-align: center;
+}
+
+.time-container .time p{
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #000000;
+    font-size: 18px;
+    /* margin: 21px 94px 45px 230px; */
+    text-align: center;
 }

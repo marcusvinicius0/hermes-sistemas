@@ -3,10 +3,10 @@ import './header.css';
 import bellIcon from '../../assets/notification.svg';
 import ellipse from '../../assets/ellipse.svg';
 
-export default function Header() {
+export default function Header(props) {
     return (
         <header>
-            <h1 className="dashboard-string">Dashboard</h1>
+            <h1 className="dashboard-string">{props.name}</h1>
 
             <div className="right-side">
                 <label className="bell">
