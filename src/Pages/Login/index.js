@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg';
 
 export default function SignIn() {
     return (
-        <body>
+        <div>
             <div className="container-loginpage">
                 <div className='login-bg'>
                     <div className="login-area">
@@ -42,6 +42,6 @@ export default function SignIn() {
 
                 </div>
             </div>
-        </body>
+        </div>
     )
 }

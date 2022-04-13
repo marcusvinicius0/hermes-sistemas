@@ -6,7 +6,7 @@ export default function Erro(){
         <div>
             <h1>pagina erro</h1>
             <p>404 not found</p>
-            <Link to="/">go to dashboard</Link>
+            <Link to="/dashboard">go to dashboard</Link>
         </div>
     )
 
