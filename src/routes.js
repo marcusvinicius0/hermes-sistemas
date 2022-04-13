@@ -5,7 +5,7 @@ import DashBoard from './Pages/Dashboard';
 import Vendas from './Pages/Vendas';
 import Estoque from './Pages/Estoque';
 import Clientes from './Pages/Clientes';
-import Configuração from './Pages/Configuração';
+import Configuracao from './Pages/Configuração';
 import Erro from './Pages/Erro';
 
 
@@ -19,7 +19,7 @@ const MyRoutes = () => {
                 <Route path="/vendas" element={<Vendas />} />
                 <Route path="/estoque" element={<Estoque />} />
                 <Route path="/clientes" element={<Clientes />} />
-                <Route path="/configuração" element={<Configuração />} />
+                <Route path="/configuracao" element={<Configuracao />} />
                 <Route path="*" element={<Erro />} />
             </Routes>
         </BrowserRouter>

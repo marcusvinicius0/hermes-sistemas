@@ -19,7 +19,7 @@ export default function Sidebar() {
                 <img className="logo" src={logo} alt="logo" />
             </div>
 
-            <hr className="row"></hr>
+            <hr className="row"/>
 
             <Link to="/dashboard">
                 <img className="dashboardIcon" src={dashboardIcon} alt="dashboard" />
@@ -37,15 +37,13 @@ export default function Sidebar() {
                 <img className="customersIcon" src={clientesIcon} alt="clientes" />
             </Link>
 
-            <div />
+            <hr className="row1" />
 
-            <hr className="row1"></hr>
-
-            <Link to="/configuração">
+            <Link to="/configuracao">
                 <img className="settingsIcon" src={configuracaoIcon} alt="configuração" />
             </Link>
 
-            <Link to="/">
+            <Link to="/dashboard">
                 <img className="helpIcon" src={ajudaIcon} alt="ajuda" />
             </Link>
 

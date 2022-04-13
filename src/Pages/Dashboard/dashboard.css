@@ -14,9 +14,9 @@ body{
     margin-left: 6vw;
 }
 
-@media (min-width: 1040px) and (max-width: 1115px){
+@media (min-width: 1080px) and (max-width: 1115px){
     .pai{
-        margin-top: -56vw;
+        margin-top: -51vw;
         margin-left: 8vw;
     }
 }
@@ -33,7 +33,7 @@ body{
 @media (min-width: 1040px) and (max-width: 1115px){
     .container-dashboard1{
         width: 900px;
-        height: 530px;
+        height: 537px;
     }
 }
 
@@ -95,6 +95,15 @@ body{
     margin-right: 1.5vw;
 }
 
+@media (min-width: 1040px) and (max-width: 1115px){
+    .container-ultimasvendas{
+        margin-top: -23.9vw;
+        margin-right: 1vw;
+        width: 390px;
+        height: 355px;
+    }
+}
+
 .container-ultimasvendas h2{
     padding-left: 1vw;
     padding-top: 7px;
@@ -109,6 +118,14 @@ body{
     margin: 17px 16px 13px 17px;
     color: red;
     text-align: center;
+}
+
+@media (min-width: 1040px) and (max-width: 1115px){
+    .container-ultimasvendas .lista-ultimasvendas p{
+        width: 360px;
+        height: 290px;
+        margin-left: 1.3vw;
+    }
 }
 
 .financeiro{
@@ -206,6 +223,14 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: -11.4vw;
     margin-left: 37.2vw;
+}
+
+@media (min-width: 1080px) and (max-width: 1115px){
+    .time-container .time{
+        width: 390px;
+        margin-left: 44.6vw;
+        margin-top: -14vw;
+    }
 }
 
 

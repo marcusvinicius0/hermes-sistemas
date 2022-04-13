@@ -1,30 +1,27 @@
+import { useEffect, useState } from 'react';
+
 import './dashboard.css';
 
 import Header from '../../Components/Header';
 import Sidebar from "../../Components/Sidebar";
 
 export default function DashBoard() {
+    const [hora, setHora] = useState()
 
-    function horaAtual(){
-        
-        let data = new Date();
-        var hor = data.getHours();
-        var min = data.getMinutes();
-        var seg = data.getSeconds();
-        
-        let hora = `${hor}:${min}:${seg}`
+    useEffect(()=>{
 
-        return hora
-    }
+        setInterval(()=>{
+            const horario = new Date().toLocaleTimeString('pt-BR')
+            setHora(horario)
+        }, 1000)
+
+    }, [])
 
     function dataAtualFormatada() {
         
-        let data = new Date(),
-            dia = data.getDate().toString().padStart(2, '0'),
-            mes = (data.getMonth() + 1).toString().padStart(2, '0'),
-            ano = data.getFullYear();
-
-        return `${dia}/${mes}/${ano}`;
+        let data = new Date().toLocaleDateString('pt-BR')
+       
+        return data;
     }
 
     function diaSemana(){
@@ -112,7 +109,7 @@ export default function DashBoard() {
                     <div className='time-container'>
                         <div className='time'>
                             <h4>Data e hora</h4>
-                            <p className='tempo-real'>{horaAtual()}</p>
+                            <p className='tempo-real'>{hora}</p>
                             <p> {diaSemana()}, dia {dataAtualFormatada()} </p>
                         </div>
                     </div>

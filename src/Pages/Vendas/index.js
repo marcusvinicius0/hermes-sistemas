@@ -6,14 +6,13 @@ import DashBoardPesquisa from '../../Components/dashboard-pesquisa';
 
 export default function Vendas() {
     return (
-        <body>
+        <div>
             <Header name={"Vendas"} />
-            
-            <div>
-                <DashBoardPesquisa name={"Realizar venda"}  />
-            </div>
 
-        </body>
+            <div>
+                <DashBoardPesquisa name={"Realizar venda"} />
+            </div>
+        </div>
     )
 }
 
