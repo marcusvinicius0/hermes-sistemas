@@ -10,7 +10,7 @@ export default function Vendas() {
             <Header name={"Vendas"} />
 
             <div>
-                <DashBoardPesquisa name={"Realizar venda"} />
+                <DashBoardPesquisa to="/" name={"Realizar venda"} />
             </div>
         </div>
     )

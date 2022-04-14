@@ -17,7 +17,7 @@ export default function DashBoardPesquisa(props) {
                         <input type="text" />
                         <img src={Lupa} />
 
-                        <Link to="/signin">{props.name}</Link>
+                        <Link to={props.to}>{props.name}</Link>
 
                     </div>
 

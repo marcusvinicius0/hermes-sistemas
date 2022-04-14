@@ -1,5 +1,6 @@
 
 
+
 import Header from "../../Components/Header"
 import DashBoardPesquisa from "../../Components/dashboard-pesquisa"
 
@@ -10,7 +11,7 @@ export default function Estoque() {
             <Header name={"Estoque"} />
 
             <div>
-                <DashBoardPesquisa name={"Inserir produto"} />
+                <DashBoardPesquisa to={"/inserirproduto"} name={"Inserir produto"} />
             </div>
 
         </div>
