@@ -7,6 +7,7 @@ import Estoque from './Pages/Estoque';
 import Clientes from './Pages/Clientes';
 import Configuracao from './Pages/Configuração';
 import InserirProduto from './Pages/InserirProduto';
+import CadastroCliente from './Pages/CadastroCliente';
 import Erro from './Pages/Erro';
 
 
@@ -23,6 +24,8 @@ const MyRoutes = () => {
                 <Route path="/inserirproduto" element={<InserirProduto />} />
 
                 <Route path="/clientes" element={<Clientes />} />
+                <Route path="/cadastrocliente" element={<CadastroCliente />} />
+
                 <Route path="/configuracao" element={<Configuracao />} />
                 <Route path="*" element={<Erro />} />
             </Routes>

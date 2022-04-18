@@ -9,7 +9,7 @@ export default function Clientes() {
             <Header name={"Clientes"} />
 
             <div>
-                <DashBoardPesquisa to={"/dashboard"} name={"Cadastrar Cliente"} />
+                <DashBoardPesquisa to={"/cadastrocliente"} name={"Cadastrar Cliente"} />
             </div>
         </div>
 
